@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM(window 개체)</title>
+</head>
+<body>
+    <h1>window</h1>
+    <button id="btn01">새창에서 열기</button>
+    <button id="btn02">새창에서 400*400 으로 열기</button>
+    <button id="btn03">
+
+    </button>
+    <button id="btn04">
+
+    </button>
+    <button id="btn05">
+
+    </button>
+    <script>
+        let btn01 = document.querySelector('#btn01');
+        let btn02 = document.querySelector('#btn02');
+        let btn03 = document.querySelector('#btn03');
+        let btn04 = document.querySelector('#btn04');
+        let btn05 = document.querySelector('#btn05');
+        // btn.addEventListener('click',function (){
+        //     window.open='https://www.naver.com', 'naver'.width=200,height200
+
+        // });
+        btn02.addEventListener('click',function(){
+            window.open('https://www.naver.com','_blank,naver,width=400,height=400');
+        });
+           
+        btn03.addEventListener('click',function (){
+            setInterval((function(){
+
+            }),1000);
+        })
+    </script>
+</body>
+</html>
