@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기명함수</title>
+</head>
+<body>
+    <script>
+        function fn01() {
+            console.log('기명함수');
+        }
+        let fn02 = function(){
+            console.log('익명함수');
+        }
+        let obj = {
+            fn03:fn01,
+        }
+        function fn05(){
+            fn01();
+        }
+        let fn04 = function fn05(){
+            console.log('이것은 익명일까? 기명일까?');
+        }
+    </script>
+</body>
+</html>
